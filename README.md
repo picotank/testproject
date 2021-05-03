@@ -1,14 +1,14 @@
 # testproject
 
 
-<table style="width:100%">
+<table style="width:100%; table-layout: fixed;">
 <thead>
   <tr>
-    <th style="width:25%"></th>
-    <th style="width:25%">Images</th>
-    <th style="width:25%">Event data</th>
-    <th style="width:25%">Heamap</th>
-    <th style="width:25%">Interest points</th>
+    <th></th>
+    <th>Images</th>
+    <th>Event data</th>
+    <th>Heamap</th>
+    <th>Interest points</th>
   </tr>
 </thead>
 <tbody>
