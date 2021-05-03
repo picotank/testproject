@@ -5,10 +5,10 @@
 <thead>
   <tr>
     <th></th>
-    <th><h2>Intensity Image</h2></th>
-    <th><h2>&nbsp;&nbsp;Event Data&nbsp;&nbsp;</h2></th>
-    <th><h2>&nbsp;&nbsp;&nbsp;&nbsp;Heamap&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2></th>
-    <th><h2>Interest Points</h2></th>
+    <th><h3>Intensity Image</h3></th>
+    <th><h3>&nbsp;&nbsp;Event Data&nbsp;&nbsp;</h3></th>
+    <th><h3>&nbsp;&nbsp;&nbsp;&nbsp;Heamap&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3></th>
+    <th><h3>Interest Points</h3></th>
   </tr>
 </thead>
 <tbody>
