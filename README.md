@@ -5,10 +5,10 @@
 <thead>
   <tr>
     <th></th>
-    <th>Images</th>
-    <th>Event data</th>
-    <th>Heamap</th>
-    <th>Interest points</th>
+    <th style="width:200px">Images</th>
+    <th style="width:200px">Events</th>
+    <th style="width:200px">Heamap</th>
+    <th style="width:200px">Detection</th>
   </tr>
 </thead>
 <tbody>
