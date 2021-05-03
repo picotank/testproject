@@ -1,14 +1,14 @@
 # testproject
 
 
-<table style="width:100%; table-layout: fixed;">
+<table style="width:100%">
 <thead>
   <tr>
     <th></th>
-    <th style="width:200px">&nbsp;&nbsp;&nbsp;&nbsp;Images&nbsp;&nbsp;&nbsp;&nbsp;</th>
-    <th style="width:200px">Events</th>
-    <th style="width:200px">Heamap</th>
-    <th style="width:200px">Detection</th>
+    <th>Intensity Image</th>
+    <th>&nbsp;&nbsp;Event Data&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;&nbsp;&nbsp;Heamap&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th>Interest Points</th>
   </tr>
 </thead>
 <tbody>
