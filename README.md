@@ -7,7 +7,7 @@
     <th style="width:25%"></th>
     <th style="width:25%">Images</th>
     <th style="width:25%">Event data</th>
-    <th style="width:25%">Interest points heamap</th>
+    <th style="width:25%">Heamap</th>
     <th style="width:25%">Interest points</th>
   </tr>
 </thead>
