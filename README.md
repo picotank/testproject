@@ -4,11 +4,11 @@
 <table style="width:100%">
 <thead>
   <tr>
-    <th></th>
-    <th>Images</th>
-    <th>Event data</th>
-    <th>Interest points <br>heamap</th>
-    <th>Interest points</th>
+    <th style="width:25%"></th>
+    <th style="width:25%">Images</th>
+    <th style="width:25%">Event data</th>
+    <th style="width:25%">Interest points <br>heamap</th>
+    <th style="width:25%">Interest points</th>
   </tr>
 </thead>
 <tbody>
