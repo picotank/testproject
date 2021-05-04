@@ -43,3 +43,9 @@ The environment is run in python 3.6, Pytorch 1.5.0.
   </tr>
 </tbody>
 </table>
+
+## Reference
+[1] DeTone, D., Malisiewicz, T., & Rabinovich, A. (2018). SuperPoint: Self-Supervised Interest Point Detection and Description. 2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW), 337-33712.
+
+
+
