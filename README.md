@@ -2,7 +2,7 @@
 
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/picotank/testproject/main/header_office.png" width="900px">
+  <img src="https://raw.githubusercontent.com/picotank/testproject/main/header_office.png" width="720px">
 </p>
 
 ## Abstract
