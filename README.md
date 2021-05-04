@@ -1,15 +1,16 @@
 # Test Project
 
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/picotank/testproject/main/header_office.png" width="900px">
+</p>
+
 ## Abstract
 We developed an interest point detector to detect interest point location from **event camera data**. This idea was adapted from the literature *"SuperPoint: Self-Supervised Interest Point Detection and Description."*[1]
 
 Our algorithm mainly consists of two parts:
 We first train our detector network with synthetic event data. We then iteratively use the trained detector network to label interest points of a real-world dataset and train the network with the labeled dataset.
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/picotank/testproject/main/header_office.png" width="900px">
-</p>
 
 ## Requirements
 The environment is run in python 3.6, Pytorch 1.5.0.
