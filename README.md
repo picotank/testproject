@@ -2,7 +2,7 @@
 
 
 ## Abstract
-We developed an interest point detector to detect interest point location from **event camera data**. The idea was adapted from the literature *"SuperPoint: Self-Supervised Interest Point Detection and Description."*[1]
+We developed an interest point detector to detect interest point location from **event camera data**. This idea was adapted from the literature *"SuperPoint: Self-Supervised Interest Point Detection and Description."*[1]
 
 Our algorithm mainly consists of two parts:
 We first train our detector network with synthetic event data. We then iteratively use the trained detector network to label interest points of a real-world dataset and train the network with the labeled dataset.
