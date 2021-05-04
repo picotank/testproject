@@ -2,9 +2,10 @@
 
 
 ## Abstract
-We developed an interestpoint detector to detect interest points location for event camera images. We adapted the idea from "SuperPoint: Self-Supervised Interest Point Detection and Description." Daniel DeTone, Tomasz Malisiewicz, Andrew Rabinovich. ArXiv 2018.
+We developed an interestpoint detector to detect interest points location for event camera images. The idea was adpated from the literature *"SuperPoint: Self-Supervised Interest Point Detection and Description."* Daniel DeTone, Tomasz Malisiewicz, Andrew Rabinovich. ArXiv 2018. 
 
-We propose and implement a reinforcement learning algorithm that learns to select the desired subset of a dataset for deep classification learning such that the classification network can achieve a better accuracy at the final state. The Program is implemented in Python with Tensorflow
+Our algorithm mainly consists of two parts:
+1. We first train our detector network with a synthetic dataset. 2. We iteratively use the trained detector network to label interest points of real-world dataset and then self-train the network with the labeled dataset.
 
 
 ## Requirements
