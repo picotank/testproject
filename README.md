@@ -12,8 +12,8 @@ Our algorithm mainly consists of two parts:
 We first train our detector network with synthetic event data. We then iteratively use the trained detector network to label interest points of a real-world dataset and train the network with the labeled dataset.
 
 
-## Requirements
-The environment is run in python 3.6, Pytorch 1.5.0.
+## Installation
+The environment is run in python 3.6, Pytorch 1.5.0 and ROS. We ran our code with Ubuntu 18.04 and ROS Melodic. Installation instructions for *ROS* can be found [here](https://github.com/uzh-rpg/rpg_esim).
 
 
 ## Results
@@ -54,6 +54,8 @@ The environment is run in python 3.6, Pytorch 1.5.0.
 [2] Zhu, A.Z., Thakur, D., Özaslan, T., Pfrommer, B., Kumar, V., & Daniilidis, K. (2018). The Multivehicle Stereo Event Camera Dataset: An Event Camera Dataset for 3D Perception. IEEE Robotics and Automation Letters, 3, 2032-2039.
 
 [3] Mueggler, E., Rebecq, H., Gallego, G., Delbrück, T., & Scaramuzza, D. (2017). The event-camera dataset and simulator: Event-based data for pose estimation, visual odometry, and SLAM. The International Journal of Robotics Research, 36, 142 - 149.
+
+[4] Rebecq, H., Gehrig, D., & Scaramuzza, D. (2018). ESIM: an Open Event Camera Simulator. CoRL.
 
 
 
