@@ -6,7 +6,7 @@
 </p>
 
 ## Abstract
-We developed an interest point detector to detect interest point location from **event camera data**. This idea was adapted from the literature *"SuperPoint: Self-Supervised Interest Point Detection and Description."* Daniel DeTone, Tomasz Malisiewicz, Andrew Rabinovich [ArXiV 2018](https://arxiv.org/abs/1712.07629) [1] This code is partially based on the pytorch implementation. https://github.com/eric-yyjau/pytorch-superpoint.
+We developed an interest point detector to detect interest point location from **event camera data**. This idea was adapted from the literature *"SuperPoint: Self-Supervised Interest Point Detection and Description."* Daniel DeTone, Tomasz Malisiewicz, Andrew Rabinovich. [ArXiV 2018](https://arxiv.org/abs/1712.07629). [1] This code is partially based on the pytorch implementation. https://github.com/eric-yyjau/pytorch-superpoint.
 
 Our algorithm mainly consists of two parts:
 We first train our detector network with synthetic event data. We then iteratively use the trained detector network to label interest points of a real-world dataset and train the network with the labeled dataset.
