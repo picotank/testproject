@@ -16,6 +16,30 @@ We first train our detector network with synthetic event data. We then iterative
 The environment is run in python 3.6, Pytorch 1.5.0 and ROS. We ran our code with Ubuntu 18.04 and ROS Melodic. Installation instructions for *ROS* can be found [here](http://wiki.ros.org/kinetic/Installation/Ubuntu). To generate syntheic event data, we used "ESIM: an Open Event Camera Simulator". You may find installation details of *ESIM* [here](https://github.com/uzh-rpg/rpg_esim).
 
 
+## Usage
+All commands should be executed within the `pytorch-sp` folder. When 
+
+#### 1) Generating Synthetic Event Data
+
+Modify the output path in the bash script to set your synthetic data output location. We developa python event simulator *pyV2E*, which mimics the existing ESIM simulator and generatesevent data from video/image input.
+```
+cd generate_data
+bash generate.sh
+```
+#### 2) Train MagicPoint on Synthetic Shapes
+```
+python train.py train_base configs/magicpoint_shapes_pair.yaml magicpoint_synth --eval
+```
+
+#### 3) Export detections on Dataset
+```
+python export.py export_detector_homoAdapt configs/magicpoint_coco_export.yaml magicpoint_synth_homoAdapt_coco
+```
+
+#### 4) Train Superpoint on self-labeled real world dataset
+```
+python train4.py <train task> <config file> <export folder> --eval
+```
 
 
 ## Results
