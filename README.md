@@ -23,7 +23,11 @@ pip install -r requirements_torch.txt # install pytorch
 ```
 
 ## Dataset
-We used data sequences from [MVSEC](https://daniilidis-group.github.io/mvsec/) [2] and [IJRR](http://rpg.ifi.uzh.ch/davis_data.html) (ETH event dataset) [1] to further train our network.
+We used data sequences from [MVSEC](https://daniilidis-group.github.io/mvsec/) [2] and [IJRR](http://rpg.ifi.uzh.ch/davis_data.html) (ETH event dataset) [1] to further train our network. This code processes the events in HDF5 format. To convert the rosbags to this format, open a new terminal and source a ROS workspace. We command to use packages from https://github.com/TimoStoff/event_cnn_minimal
+```
+source /opt/ros/kinetic/setup.bash
+python events_contrast_maximization/tools/rosbag_to_h5.py <path/to/rosbag/or/dir/with/rosbags> --output_dir <path/to/save_h5_events> --event_topic <event_topic> --image_topic <image_topic>
+```
 
 
 
