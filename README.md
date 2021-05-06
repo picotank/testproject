@@ -9,18 +9,23 @@
 We developed an interest point detector to detect interest point location from **event camera data**. This idea was adapted from the literature *"SuperPoint: Self-Supervised Interest Point Detection and Description."* Daniel DeTone, Tomasz Malisiewicz, Andrew Rabinovich. [ArXiV 2018](https://arxiv.org/abs/1712.07629). [1] This code is partially based on the pytorch implementation. https://github.com/eric-yyjau/pytorch-superpoint.
 
 Our algorithm mainly consists of two parts:
-We first train our detector network with synthetic event data. We then iteratively use the trained detector network to label interest points of a real-world dataset and train the network with the labeled dataset.
+1. We first train our detector network with synthetic event data. 2. We then iteratively use the trained detector network to label interest points of a real-world dataset and train the network with the labeled dataset.
 
 
 ## Installation
 The environment is run in python 3.6, Pytorch 1.5.0 and ROS. We ran our code with Ubuntu 18.04 and ROS Melodic. Installation instructions for *ROS* can be found [here](http://wiki.ros.org/kinetic/Installation/Ubuntu). To generate syntheic event data, we used "ESIM: an Open Event Camera Simulator". You may find installation details of *ESIM* [here](https://github.com/uzh-rpg/rpg_esim).
 
+#### To install conda env
 ```
 conda create --name py36-sp python=3.6
 conda activate py36-sp
 pip install -r requirements.txt
 pip install -r requirements_torch.txt # install pytorch
 ```
+
+#### To install Ros
+
+#### To install the Event Camera Simulator
 
 ## Dataset
 We used data sequences from [MVSEC](https://daniilidis-group.github.io/mvsec/) [2] and [IJRR](http://rpg.ifi.uzh.ch/davis_data.html) (ETH event dataset) [1] to further train our network. This code processes the events in HDF5 format. To convert the rosbags to this format, open a new terminal and source a ROS workspace. We command to use packages from https://github.com/TimoStoff/event_cnn_minimal
