@@ -10,7 +10,8 @@ We developed an interest point detector to detect interest point location from *
 
 Our algorithm mainly consists of two parts:
 1. We first train our detector network with synthetic event data. 
-2. We then iteratively use the trained detector network to label interest points of a real-world dataset and train the network with the labeled dataset.
+2. We iteratively use the trained detector network to label interest points of a real-world dataset and 
+    then train the network with the labeled dataset.
 
 
 ## Installation
