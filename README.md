@@ -44,11 +44,11 @@ python events_contrast_maximization/tools/rosbag_to_h5.py <path/to/rosbag/or/dir
 
 
 ## Usage
-All commands should be executed within the `pytorch-sp` folder. When 
+All commands should be executed within the `pytorch-sp` folder.
 
 #### 1) Generating Synthetic Event Data
 
-Modify the output path in the bash script to set your synthetic data output location. We developa python event simulator *pyV2E*, which mimics the existing ESIM simulator and generatesevent data from video/image input.
+Modify the output path in the bash script to set your synthetic data output location. We developed a python event simulator *pyV2E*, which mimics the existing ESIM simulator and generatesevent data from video/image input.
 ```
 cd generate_data
 bash generate.sh
