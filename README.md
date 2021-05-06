@@ -105,5 +105,7 @@ python train4.py <train task> <config file> <export folder> --eval
 
 [4] Rebecq, H., Gehrig, D., & Scaramuzza, D. (2018). ESIM: an Open Event Camera Simulator. CoRL.
 
+[5]. Stoffregen, T., Scheerlinck, C., Scaramuzza, D., Drummond, T., Barnes, N., Kleeman, L., & Mahony, R. (2020). Reducing the Sim-to-Real Gap for Event Cameras. ECCV.
+
 
 
