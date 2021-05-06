@@ -15,7 +15,7 @@ Our algorithm mainly consists of two parts:
 
 
 ## Installation
-The environment is run in python 3.6, Pytorch 1.5.0 and ROS. We ran our code with Ubuntu 18.04 and ROS Melodic. Installation instructions for *ROS* can be found [here](http://wiki.ros.org/kinetic/Installation/Ubuntu). To generate syntheic event data, we used "ESIM: an Open Event Camera Simulator". You may find installation details of *ESIM* [here](https://github.com/uzh-rpg/rpg_esim).
+The environment is run in python 3.6, Pytorch 1.5.0 and ROS. We ran our code with Ubuntu 18.04 and ROS Melodic. Installation instructions for *ROS* can be found [here](http://wiki.ros.org/melodic/Installation/Ubuntu). To generate syntheic event data, we used "ESIM: an Open Event Camera Simulator". You may find installation details of *ESIM* [here](https://github.com/uzh-rpg/rpg_esim).
 
 #### To install conda env
 ```
@@ -25,9 +25,14 @@ pip install -r requirements.txt
 pip install -r requirements_torch.txt # install pytorch
 ```
 
-#### To install Ros
+#### To install Ros Melodic 
+```
+sudo apt-get update
+sudo apt-get install ros-melodic-desktop-full
+sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
+```
+After installed Ros, don't forget to install the Event Camera Simulator. 
 
-#### To install the Event Camera Simulator
 
 ## Dataset
 In step 2, we used data sequences (in ros format) from [MVSEC](https://daniilidis-group.github.io/mvsec/) [2] and [IJRR](http://rpg.ifi.uzh.ch/davis_data.html) (ETH event dataset) [1] to further train our network. This code processes the events in HDF5 format. To convert the rosbags to this format, open a new terminal and source a ROS workspace. We command to use packages from https://github.com/TimoStoff/event_cnn_minimal
