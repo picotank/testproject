@@ -27,7 +27,12 @@
 <p align="center">
   <img src="https://github.com/picotank/testproject/blob/main/rpe2.png" width="420px">
 </p>
-* The evaluation is done under our evaluation scripts.
+
+The evaluation is done under our evaluation scripts.
+
+
+
+
 <table class="tg">
 <thead>
   <tr>
@@ -74,7 +79,7 @@
   </tr>
   <tr>
     <td class="tg-0pky"></td>
-    <td class="tg-0pky">Outdoor_day1</td>
+    <td class="tg-0pky">Outdoor_day1*</td>
     <td class="tg-0pky">0.1039</td>
     <td class="tg-0pky">0.1363</td>
     <td class="tg-0pky">1.44</td>
@@ -106,3 +111,5 @@
   </tr>
 </tbody>
 </table>
+* tested on no sunlight scene
+** training Set
