@@ -43,9 +43,7 @@ python events_contrast_maximization/tools/rosbag_to_h5.py <path/to/rosbag/or/dir
   <img src="https://github.com/picotank/testproject/blob/main/rpe2.png" width="420px">
 </p>
 
-The evaluation is done under our evaluation scripts.
-
-
+The evaluation is done under our evaluation scripts. We evaluated our algorithm using relative pose error corresponds to the drift of the trajectory. Moreover, we also calculated the percentange of outliners *>0.5* and *>1.0*, where *2.0* is the max error rate
 
 
 <table class="tg">
@@ -131,4 +129,13 @@ The evaluation is done under our evaluation scripts.
 ** training Set
 
 
-## Result
+## Reference
+[1] Sturm, J., Engelhard, N., Endres, F., Burgard, W., & Cremers, D. (2012). A benchmark for the evaluation of RGB-D SLAM systems. 2012 IEEE/RSJ International Conference on Intelligent Robots and Systems, 573-580.
+
+[2] Zhu, A.Z., Yuan, L., Chaney, K., & Daniilidis, K. (2019). Unsupervised Event-Based Learning of Optical Flow, Depth, and Egomotion. 2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 989-997.
+
+[3] Zhu, A.Z., Thakur, D., Özaslan, T., Pfrommer, B., Kumar, V., & Daniilidis, K. (2018). The Multivehicle Stereo Event Camera Dataset: An Event Camera Dataset for 3D Perception. IEEE Robotics and Automation Letters, 3, 2032-2039.
+
+[4] Mueggler, E., Rebecq, H., Gallego, G., Delbrück, T., & Scaramuzza, D. (2017). The event-camera dataset and simulator: Event-based data for pose estimation, visual odometry, and SLAM. The International Journal of Robotics Research, 36, 142 - 149.
+
+[5] Stoffregen, T., Scheerlinck, C., Scaramuzza, D., Drummond, T., Barnes, N., Kleeman, L., & Mahony, R. (2020). Reducing the Sim-to-Real Gap for Event Cameras. ECCV.
