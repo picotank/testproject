@@ -21,7 +21,7 @@
 </table>
 
 ## Abstract
-We developed an algorithm to estimate the optical flow of a scene and correspond camera odometry from a sequence of *event data*. This idea was adapted from the literature *"Unsupervised Event-based Learning of Optical Flow, Depth, and Egomotion."* Alex Zihao Zhu, Liangzhe Yuan, Kenneth Chaney, Kostas Daniilidis. [ArXiV](https://arxiv.org/pdf/1812.08156.pdf) 2018. [1]
+We developed an algorithm to estimate the optical flow of a scene and correspond camera odometry from a sequence of **event data**. This idea was adapted from the literature *"Unsupervised Event-based Learning of Optical Flow, Depth, and Egomotion."* Alex Zihao Zhu, Liangzhe Yuan, Kenneth Chaney, Kostas Daniilidis. [ArXiV](https://arxiv.org/pdf/1812.08156.pdf) 2018. [1]
 
 Also, check out our **event interest point detection** project. https://github.com/picotank/testproject
 
