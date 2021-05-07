@@ -20,6 +20,21 @@
 </thead>
 </table>
 
+## Abstract
+We developed an algorithm to estimate the optical flow of a scene and correspond camera odometry from a sequence of *event data*. This idea was adapted from the literature *"Unsupervised Event-based Learning of Optical Flow, Depth, and Egomotion."* Alex Zihao Zhu, Liangzhe Yuan, Kenneth Chaney, Kostas Daniilidis. [ArXiV](https://arxiv.org/pdf/1812.08156.pdf) 2018. [1]
+
+
+
+## Installation
+
+## Dataset
+we used data sequences (in ros format) from [MVSEC](https://daniilidis-group.github.io/mvsec/) [2] and [IJRR](http://rpg.ifi.uzh.ch/davis_data.html) (ETH event dataset) [1] to further train our network. This code processes the events in HDF5 format. To convert the rosbags to this format, open a new terminal and source a ROS workspace. We command to use packages from https://github.com/TimoStoff/event_cnn_minimal
+```
+source /opt/ros/kinetic/setup.bash
+python events_contrast_maximization/tools/rosbag_to_h5.py <path/to/rosbag/or/dir/with/rosbags> --output_dir <path/to/save_h5_events> --event_topic <event_topic> --image_topic <image_topic>
+```
+
+
 ## Result
 <p align="center">
   <img src="https://github.com/picotank/testproject/blob/main/rpe1.png" width="420px">
@@ -112,4 +127,8 @@ The evaluation is done under our evaluation scripts.
 </tbody>
 </table>
 * tested on no sunlight scene
+
 ** training Set
+
+
+## Result
