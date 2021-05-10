@@ -26,8 +26,32 @@ We developed an algorithm to estimate the optical flow of a scene and correspond
 Also, check out our **event interest point detection** project. https://github.com/picotank/testproject
 
 
-
 ## Installation
+The environment is run in python 3.6, Pytorch 1.5.0 and ROS. We ran our code with Ubuntu 18.04 and ROS Melodic. Installation instructions for *ROS* can be found [here](http://wiki.ros.org/melodic/Installation/Ubuntu). To generate syntheic event data, we used "ESIM: an Open Event Camera Simulator". You may find installation details of *ESIM* [here](https://github.com/uzh-rpg/rpg_esim).
+
+#### To install conda env
+```
+conda create --name py36-sp python=3.6
+conda activate py36-sp
+pip install -r requirements.txt
+pip install -r requirements_torch.txt # install pytorch
+```
+
+#### To install Ros Melodic 
+```
+sudo apt-get update
+sudo apt-get install ros-melodic-desktop-full
+sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
+```
+After installed Ros, don't forget to install the Event Camera Simulator. 
+
+
+## Dataset
+In step 2, we used data sequences (in ros format) from [MVSEC](https://daniilidis-group.github.io/mvsec/) [2] and [IJRR](http://rpg.ifi.uzh.ch/davis_data.html) (ETH event dataset) [1] to further train our network. This code processes the events in HDF5 format. To convert the rosbags to this format, open a new terminal and source a ROS workspace. We command to use packages from https://github.com/TimoStoff/event_cnn_minimal
+```
+source /opt/ros/kinetic/setup.bash
+python events_contrast_maximization/tools/rosbag_to_h5.py <path/to/rosbag/or/dir/with/rosbags> --output_dir <path/to/save_h5_events> --event_topic <event_topic> --image_topic <image_topic>
+```
 
 ## Dataset
 we used data sequences (in ros format) from [MVSEC](https://daniilidis-group.github.io/mvsec/) [2] and [IJRR](http://rpg.ifi.uzh.ch/davis_data.html) (ETH event dataset) [1] to further train our network. This code processes the events in HDF5 format. To convert the rosbags to this format, open a new terminal and source a ROS workspace. We command to use packages from https://github.com/TimoStoff/event_cnn_minimal
