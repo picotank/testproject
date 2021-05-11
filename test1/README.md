@@ -55,6 +55,11 @@ python events_contrast_maximization/tools/rosbag_to_h5.py <path/to/rosbag/or/dir
 
 
 ## Result
+
+#### Odometry Estimation
+
+The evaluation is done under our evaluation scripts. We evaluated our algorithm using relative pose error corresponds to the drift of the trajectory. Moreover, we also calculated the percentange of outliners *>0.5* and *>1.0*, where *2.0* is the max error rate
+
 <p align="center">
   <img src="https://github.com/picotank/testproject/blob/main/rpe1.png" width="420px">
 </p>
@@ -62,8 +67,23 @@ python events_contrast_maximization/tools/rosbag_to_h5.py <path/to/rosbag/or/dir
   <img src="https://github.com/picotank/testproject/blob/main/rpe2.png" width="420px">
 </p>
 
-The evaluation is done under our evaluation scripts. We evaluated our algorithm using relative pose error corresponds to the drift of the trajectory. Moreover, we also calculated the percentange of outliners *>0.5* and *>1.0*, where *2.0* is the max error rate
 
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky">
+      <p align="center">
+        <img src="https://github.com/picotank/testproject/blob/main/test1/outdoor1_trajectory.png?raw=true" width="420px">
+      </p>
+    </th>
+    <th class="tg-0pky">
+      <p align="center">
+        <img src="https://github.com/picotank/testproject/blob/main/test1/night1_indoor4.png?raw=true" width="420px">
+      </p>
+    </th>
+  </tr>
+</thead>
+</table>
 
 <table class="tg">
 <thead>
@@ -147,6 +167,74 @@ The evaluation is done under our evaluation scripts. We evaluated our algorithm 
 
 ** training Set
 
+
+
+
+
+
+#### Estimated Optical Flow
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky">Orignal Event Images</th>
+    <th class="tg-0pky">Deblured Images</th>
+    <th class="tg-0pky">Estimated Optical Flow</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">
+      <p align="center">
+        <img src="https://github.com/picotank/testproject/blob/main/test1/blur1.png?raw=true" width="420px">
+      </p>
+    </td>
+    <td class="tg-0pky">
+      <p align="center">
+        <img src="https://github.com/picotank/testproject/blob/main/test1/deblur1.png?raw=true" width="420px">
+      </p>
+    </td>
+    <td class="tg-0pky">
+      <p align="center">
+        <img src="https://github.com/picotank/testproject/blob/main/test1/opticalflow1.png?raw=true" width="420px">
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">
+      <p align="center">
+        <img src="https://github.com/picotank/testproject/blob/main/test1/blur2.png?raw=true" width="420px">
+      </p>
+    </td>
+    <td class="tg-0pky">
+      <p align="center">
+        <img src="https://github.com/picotank/testproject/blob/main/test1/deblur2.png?raw=true" width="420px">
+      </p>
+    </td>
+    <td class="tg-0pky">
+      <p align="center">
+        <img src="https://github.com/picotank/testproject/blob/main/test1/opticalflow2.png?raw=true" width="420px">
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">
+      <p align="center">
+        <img src="https://github.com/picotank/testproject/blob/main/test1/blur3.png?raw=true" width="420px">
+      </p>
+    </td>
+    <td class="tg-0pky">
+      <p align="center">
+        <img src="https://github.com/picotank/testproject/blob/main/test1/deblur3.png?raw=true" width="420px">
+      </p>
+    </td>
+    <td class="tg-0pky">
+      <p align="center">
+        <img src="https://github.com/picotank/testproject/blob/main/test1/opticalflow3.png?raw=true" width="420px">
+      </p>
+    </td>
+  </tr>
+</tbody>
+</table>
 
 ## Reference
 [1] Sturm, J., Engelhard, N., Endres, F., Burgard, W., & Cremers, D. (2012). A benchmark for the evaluation of RGB-D SLAM systems. 2012 IEEE/RSJ International Conference on Intelligent Robots and Systems, 573-580.
