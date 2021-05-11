@@ -53,6 +53,19 @@ source /opt/ros/kinetic/setup.bash
 python events_contrast_maximization/tools/rosbag_to_h5.py <path/to/rosbag/or/dir/with/rosbags> --output_dir <path/to/save_h5_events> --event_topic <event_topic> --image_topic <image_topic>
 ```
 
+## Usage
+
+To train the network with the dataset
+```
+python train.py --load_path data/outdoor_day1_data.h5
+```
+
+To Evaluate the Relative Pose Error run with associate.py
+
+The program output an tragetory of the estimated path together with the error rate.
+```
+python associate.py gt.txt estimated.txt
+```
 
 ## Result
 
