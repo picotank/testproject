@@ -55,7 +55,7 @@ python events_contrast_maximization/tools/rosbag_to_h5.py <path/to/rosbag/or/dir
 
 ## Usage
 
-To train the network with the dataset
+To train the network with the dataset. To set training parameters, go to `config.py` file.
 ```
 python train.py --load_path data/outdoor_day1_data.h5
 ```
