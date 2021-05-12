@@ -198,51 +198,51 @@ The evaluation is done under our evaluation scripts. We evaluated our algorithm 
   <tr>
     <td class="tg-0pky">
       <p align="center">
-        <img src="https://github.com/picotank/testproject/blob/main/test1/blur1.png?raw=true" width="420px">
+        <img src="https://github.com/picotank/testproject/blob/main/test1/blur1.png?raw=true" width="360px">
       </p>
     </td>
     <td class="tg-0pky">
       <p align="center">
-        <img src="https://github.com/picotank/testproject/blob/main/test1/deblur1.png?raw=true" width="420px">
+        <img src="https://github.com/picotank/testproject/blob/main/test1/deblur1.png?raw=true" width="360px">
       </p>
     </td>
     <td class="tg-0pky">
       <p align="center">
-        <img src="https://github.com/picotank/testproject/blob/main/test1/opticalflow1.png?raw=true" width="420px">
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">
-      <p align="center">
-        <img src="https://github.com/picotank/testproject/blob/main/test1/blur2.png?raw=true" width="420px">
-      </p>
-    </td>
-    <td class="tg-0pky">
-      <p align="center">
-        <img src="https://github.com/picotank/testproject/blob/main/test1/deblur2.png?raw=true" width="420px">
-      </p>
-    </td>
-    <td class="tg-0pky">
-      <p align="center">
-        <img src="https://github.com/picotank/testproject/blob/main/test1/opticalflow2.png?raw=true" width="420px">
+        <img src="https://github.com/picotank/testproject/blob/main/test1/opticalflow1.png?raw=true" width="360px">
       </p>
     </td>
   </tr>
   <tr>
     <td class="tg-0pky">
       <p align="center">
-        <img src="https://github.com/picotank/testproject/blob/main/test1/blur3.png?raw=true" width="420px">
+        <img src="https://github.com/picotank/testproject/blob/main/test1/blur2.png?raw=true" width="360px">
       </p>
     </td>
     <td class="tg-0pky">
       <p align="center">
-        <img src="https://github.com/picotank/testproject/blob/main/test1/deblur3.png?raw=true" width="420px">
+        <img src="https://github.com/picotank/testproject/blob/main/test1/deblur2.png?raw=true" width="360px">
       </p>
     </td>
     <td class="tg-0pky">
       <p align="center">
-        <img src="https://github.com/picotank/testproject/blob/main/test1/opticalflow3.png?raw=true" width="420px">
+        <img src="https://github.com/picotank/testproject/blob/main/test1/opticalflow2.png?raw=true" width="360px">
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">
+      <p align="center">
+        <img src="https://github.com/picotank/testproject/blob/main/test1/blur3.png?raw=true" width="360px">
+      </p>
+    </td>
+    <td class="tg-0pky">
+      <p align="center">
+        <img src="https://github.com/picotank/testproject/blob/main/test1/deblur3.png?raw=true" width="360px">
+      </p>
+    </td>
+    <td class="tg-0pky">
+      <p align="center">
+        <img src="https://github.com/picotank/testproject/blob/main/test1/opticalflow3.png?raw=true" width="360px">
       </p>
     </td>
   </tr>
